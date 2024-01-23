@@ -20,10 +20,10 @@ const callback = ((accumulator, current) => accumulator * current)
 
 // Original
 const array = [2, 3, 4, 9, 5]
-const resultOriginal = array.reduce(callback)
-console.log(resultOriginal) // 1080
+const originalResult = array.reduce(callback)
+console.log(originalResult) // 1080
 
 // My implementation
 const _array = new _Array(array)
-const resultImplementation = _array._reduce(callback)
-console.log(resultImplementation) // 1080
+const implementaionResult = _array._reduce(callback)
+console.log(implementaionResult) // 1080
