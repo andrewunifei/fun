@@ -12,3 +12,4 @@ function outer() {
 }
 ```
 
+The power of Closures is that the inner function remembers the outer funtion scope even after creation time.

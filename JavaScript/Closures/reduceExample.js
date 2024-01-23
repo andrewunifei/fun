@@ -10,9 +10,7 @@ class _Array {
     _reduce(callback, initialValue = this.elements[0]) {
         let accumulator = initialValue
         
-        this.elements.slice(1).forEach(element => {
-            accumulator = callback(accumulator, element)
-        });
+        this.elements.slice(1).forEach(element => accumulator = callback(accumulator, element));
     
         return accumulator
     }
@@ -22,10 +20,10 @@ const callback = ((accumulator, current) => accumulator * current)
 
 // Original
 const array = [2, 3, 4, 9, 5]
-const reduceOriginal = array.reduce(callback)
-console.log(reduceOriginal) // 1080
+const resultOriginal = array.reduce(callback)
+console.log(resultOriginal) // 1080
 
 // My implementation
-const arrayObj = new _Array(array)
-const result = arrayObj._reduce(callback)
-console.log(result) // 1080
+const _array = new _Array(array)
+const resultImplementation = _array._reduce(callback)
+console.log(resultImplementation) // 1080
