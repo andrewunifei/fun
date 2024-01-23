@@ -25,5 +25,5 @@ console.log(originalResult) // 1080
 
 // My implementation
 const _array = new _Array(array)
-const implementaionResult = _array._reduce(callback)
-console.log(implementaionResult) // 1080
+const implementationResult = _array._reduce(callback)
+console.log(implementationResult) // 1080
