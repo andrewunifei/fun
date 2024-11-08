@@ -9,7 +9,8 @@ class _Array {
 
     _reduce(callback, initialValue = this.elements[0]) {
         let accumulator = initialValue
-        
+
+        // With Closure I can call outfunction defined variables
         this.elements.slice(1).forEach(element => accumulator = callback(accumulator, element));
     
         return accumulator
